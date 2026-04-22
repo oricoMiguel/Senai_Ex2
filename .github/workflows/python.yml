@@ -1,0 +1,20 @@
+name: Ligando o python
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  Python:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Python
+        uses: actions/setup-python@v6.2.0
+        
+      - name: obter o codigo (checkout)
+        uses: actions/checkout@v4
+
+      - name: Executar o programa
+        run:
+            pwd
+            python app.py
