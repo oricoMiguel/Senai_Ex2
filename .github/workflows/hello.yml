@@ -1,0 +1,12 @@
+name: Hello Pipeline
+
+on: [push]
+
+jobs:
+  Mensagem:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dizer olá
+        run: echo "Olá, está funcionando o pipeline"
+      
+      
